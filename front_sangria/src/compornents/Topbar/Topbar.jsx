@@ -6,7 +6,7 @@ export default function Topbar() {
   return (
     <div className='topberContainer'>
       <div className='topbarLeft'>
-        <span className='logo'>PachinkoBIG</span>
+        <span className='logo'>PachiBIG</span>
       </div>
       <div className="topbarCenter">
         <div className="searchbar">
