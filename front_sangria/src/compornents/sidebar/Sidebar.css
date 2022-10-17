@@ -7,7 +7,7 @@
   padding: 20px;
 }
 
-.sidebarList {
+.sidebarlist {
   padding: 0%;
   margin: 0%;
   list-style: none;
@@ -19,7 +19,7 @@
   margin-bottom: 10px;
   padding: 4px 6px;
   cursor: pointer;
-  box-shadow: 3px 7px 13px -7px #e9d8d8;
+  box-shadow: 4px 6px 15px -5px #511a1a;
   border-radius: 10px;
   transition: all 0.3s;
 }
@@ -28,35 +28,35 @@
   transform: translateY(5px);
 }
 
-.sidebarIcon{
-    font-size: 35px !important;
-    margin-right: 10px;   
+.sidebarIcon {
+  font-size: 35px !important;
+  margin-right: 10px;
 }
 
-.sidebarListItemText{
+.sidebarListItemText {
   font-size: 20px;
   padding-top: 3px;
 }
 
-
-.sidebarHr{
+.sidebarHr {
   margin: 20px 0px;
 }
 
 .sidebarFriendImg {
   width: 32px;
   height: 32px;
+  object-fit: cover;
   border-radius: 50%;
   margin-right: 10px;
 }
 
-.sidebarFriendList{
+.sidebarFriendList {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.sidebarFriend{
+.sidebarFriend {
   display: flex;
   margin-bottom: 15px;
   align-items: center;

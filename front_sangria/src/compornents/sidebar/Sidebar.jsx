@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bookmark, Home, MessageRounded, Notifications, Person, Search } from "@mui/icons-material";
+import { Description, Home, MessageRounded, Notifications, Person, Search, Settings } from "@mui/icons-material";
 import "./Sidebar.css"
 
 export default function Sidebar() {
@@ -24,12 +24,16 @@ export default function Sidebar() {
             <span className="sidebarListItemText">DM</span>
           </li>
           <li className="sidebarListItem">
-            <Bookmark className="sidebarIcon"/>
-            <span className="sidebarListItemText">ブックマーク</span>
+            <Description className="sidebarIcon"/>
+            <span className="sidebarListItemText">収支表</span>
           </li>
           <li className="sidebarListItem">
             <Person className="sidebarIcon"/>
             <span className="sidebarListItemText">プロフィール</span>
+          </li>
+          <li className="sidebarListItem">
+            <Settings className="sidebarIcon"/>
+            <span className="sidebarListItemText">設定</span>
           </li>
         </ul>
         <hr className="sidebarHr" />
@@ -40,11 +44,11 @@ export default function Sidebar() {
           </li>
           <li className="sidebarFriend">
             <img src="/assets/person/3.jpg" alt="" className='sidebarFriendImg'/>
-            <span className="sidebarFriendName">Takayuki Tamai</span>
+            <span className="sidebarFriendName">Ken Hatakenaka</span>
           </li>
           <li className="sidebarFriend">
             <img src="/assets/person/4.jpg" alt="" className='sidebarFriendImg'/>
-            <span className="sidebarFriendName">Ken Hatakenaka</span>
+            <span className="sidebarFriendName">Takayuki Tamai</span>
           </li>
         </ul>
       </div>
