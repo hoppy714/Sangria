@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Home.css";
 import Rightbar from '../../compornents/rightbar/Rightbar';
 import Sidebar from '../../compornents/sidebar/Sidebar';
 import Timeline from '../../compornents/timeline/Timeline';
