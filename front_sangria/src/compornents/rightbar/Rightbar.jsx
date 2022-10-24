@@ -2,6 +2,7 @@ import { LocalFireDepartment } from '@mui/icons-material'
 import React from 'react'
 import './Rightbar.css'
 
+
 export default function Rightbar() {
   return (
     <div className='rightbar'>
@@ -23,7 +24,7 @@ export default function Rightbar() {
         </ul>
         <p className="promotionTitle">広告</p>
         <img src="" alt="" className="promotionImg" />
-        <p className="promotionName">Amazon</p>
+        <p className="promotionName">Amazon AdSense</p>
       </div>
     </div>
   )

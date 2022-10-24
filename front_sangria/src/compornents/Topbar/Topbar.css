@@ -52,22 +52,22 @@
   justify-content: space-around;
   color: white;
 }
-.topbarIconItems{
+.topbarIconItems {
   display: flex;
 }
-.topbarIconItem{
+.topbarIconItem {
   margin-right: 15px;
   cursor: pointer;
   position: relative;
   margin-top: 5px;
 }
-.topbarImg{
+.topbarImg {
   width: 32px;
   height: 32px;
   border-radius: 50%;
   object-fit: cover;
 }
-.topbarIconBadge{
+.topbarIconBadge {
   position: absolute;
   top: -5px;
   right: -5px;
