@@ -5,7 +5,6 @@ import {Users} from "../../test"
 
 
 export default function Post({post}) {
-  // const user = Users.filter((user) => user.id === 1 );
 
   console.log(post);
   console.log(Users);
@@ -15,7 +14,7 @@ export default function Post({post}) {
         <div className="postTop">
           <div className="postTopLeft">
             <img src="./assets/person/1.png" alt="" className="postProfileImg" />
-            <span className="postUsername">hoppin</span>
+            <span className="postUsername">username</span>
             <span className="postDate">{post.date}</span>
           </div>
           <div className="postTopRight">

@@ -14,12 +14,17 @@ export default function Profile() {
           <div className="profileRight">
             <div className="profileRightTop">
               <div className="profileCover">
-              <img src="assets/post/3.png" alt="" className='profileCoverImg' />
+              <img src="assets/post/cover.png" alt="" className='profileCoverImg' />
+              <img src="assets/post/post.jpg" alt="" className="profileUserImg" />
+            </div>
+            <div className="profileInfo">
+              <h4 className="profileInfoName">hoppy</h4>
+              <span className="profileInfoDesc">特に趣味はありません</span>
             </div>
           </div>        
             <div className="profileRightBottom">
-              <Timeline />
-              <Rightbar />
+            <Timeline />
+              <Rightbar profile/>
             </div>
           </div>
         </div>
