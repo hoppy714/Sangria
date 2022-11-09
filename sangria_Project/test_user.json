@@ -1,0 +1,122 @@
+[
+    {
+        "userid": "987462ufsdhf",
+        "username": "たろう",
+        "email": "tarou@gmail.com",
+        "password": "taroupass",
+        "profilePicture": "",
+        "coverPicture": "",
+        "followers": "",
+        "isAdmin": false,
+        "desc": "こんにちは、パチンコが好きです",
+        "city": "大阪"
+    },
+    {
+        "userid": "asfduih47ty49",
+        "username": "めぐみ",
+        "email": "megumi@gmail.com",
+        "password": "megumipass",
+        "profilePicture": "",
+        "coverPicture": "",
+        "followers": "",
+        "isAdmin": false,
+        "desc": "どうも、私はパチンコが好きです",
+        "city": "東京"
+    },
+    {
+        "userid": "nvudkgiashd847",
+        "username": "わたる",
+        "email": "wataru@gmail.com",
+        "password": "watarupass",
+        "profilePicture": "",
+        "coverPicture": "",
+        "followers": "",
+        "isAdmin": false,
+        "desc": "パチンコで人生が",
+        "city": "西成"
+    },
+    {
+        "userid": "kkafisfhaifna747",
+        "username": "たける",
+        "email": "takeru@gmail.com",
+        "password": "takerupass",
+        "profilePicture": "",
+        "coverPicture": "",
+        "followers": "",
+        "isAdmin": false,
+        "desc": "ぱちんこ初心者",
+        "city": "京都"
+    },
+    {
+        "userid": "kishhbfa22un",
+        "username": "めぐ",
+        "email": "megu@gmail.com",
+        "password": "megupass",
+        "profilePicture": "",
+        "coverPicture": "",
+        "followers": "",
+        "isAdmin": false,
+        "desc": "ああ、だるい",
+        "city": "北海道"
+    },
+    {
+        "userid": "ausnafybhvsdh23",
+        "username": "おじ",
+        "email": "oji@gmail.com",
+        "password": "ojipass",
+        "profilePicture": "",
+        "coverPicture": "",
+        "followers": "",
+        "isAdmin": false,
+        "desc": "おじ！！",
+        "city": "東京"
+    },
+    {
+        "userid": "jasyfgsdybi",
+        "username": "おば",
+        "email": "oba@gmail.com",
+        "password": "obapass",
+        "profilePicture": "",
+        "coverPicture": "",
+        "followers": "",
+        "isAdmin": false,
+        "desc": "私はパチンコが好きです",
+        "city": "東京"
+    },
+    {
+        "userid": "jbudtsers4556r7",
+        "username": "むろ",
+        "email": "muro@gmail.com",
+        "password": "muropass",
+        "profilePicture": "",
+        "coverPicture": "",
+        "followers": "",
+        "isAdmin": false,
+        "desc": "むろです",
+        "city": "仙台"
+    },
+    {
+        "userid": "asaf3525uhafas",
+        "username": "まと",
+        "email": "mato@gmail.com",
+        "password": "matopass",
+        "profilePicture": "",
+        "coverPicture": "",
+        "followers": "",
+        "isAdmin": false,
+        "desc": "まとです",
+        "city": "愛知"
+    },
+    {
+        "userid": "45765gyfcyfuhb",
+        "username": "ろう",
+        "email": "rou@gmail.com",
+        "password": "roupass",
+        "profilePicture": "",
+        "coverPicture": "",
+        "followers": "",
+        "isAdmin": false,
+        "desc": "こんにちは",
+        "city": "東京"
+    }
+]
