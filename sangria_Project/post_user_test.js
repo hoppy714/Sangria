@@ -1,4 +1,4 @@
-[
+export const Post_User = [
     {
         "userid": "987462ufsdhf",
         "username": "たろう",
