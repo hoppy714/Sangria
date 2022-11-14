@@ -118,5 +118,17 @@
         "isAdmin": false,
         "desc": "こんにちは",
         "city": "東京"
+    },
+    {
+        "userid": "ijfsduifj",
+        "username": "おぬ",
+        "email": "onu@gmail.com",
+        "password": "onupass",
+        "profilePicture": "",
+        "coverPicture": "",
+        "followers": "",
+        "isAdmin": false,
+        "desc": "おぬです",
+        "city": "金沢"
     }
 ]
