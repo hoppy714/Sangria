@@ -8,12 +8,12 @@ import Topbar from '../../compornents/Topbar/Topbar';
 export default function Home() {
   return (
     <>
-        <Topbar />
-        <div className="homeContainer">
-          <Sidebar />
-          <Timeline />
-          <Rightbar />
-        </div>
+      <Topbar />
+      <div className="homeContainer">
+        <Sidebar />
+        <Timeline />
+        <Rightbar />
+      </div>
     </>
   );
 }
