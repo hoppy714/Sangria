@@ -19,8 +19,8 @@ export default function test() {
                 </div>
             </form>
             <div class="form-footer">
-                <p><a href="#"></a>ログイン画面</p>
+                <p>ログイン画面</p>
             </div>
-        </div>    
+        </div>
     )
 }
