@@ -1,27 +1,25 @@
 import React from 'react'
 import './Login.css'
 
-export default function test() {
+export default function login() {
     return (
-        <div class="form-wrapper">
-            <h1>ログイン</h1>
-            <form>
-                <div class="form-item">
-                    <label for="メールアドレス"></label>
-                    <input type="email" name="email" required="required" placeholder="メールアドレス"></input>
+        <div className="login">
+            <div className="loginWrapper">
+                <div className="loginLeft">
+                    <h3 className="pachiSNS">Panas</h3>
+                    <span className="loginDesc">Ideas for Life</span>
                 </div>
-                <div class="form-item">
-                    <label for="password"></label>
-                    <input type="password" name="password" required="required" placeholder="パスワード"></input>
+                <div className="loginRight">
+                    <div className="loginBox">
+                        <p className="loginMsg">ログインはこちら</p>
+                        <input type="text" className="loginInput" placeholder='Email' />
+                        <input type="password" className="loginInput" placeholder='password' />
+                        <button className='loginButton'>ログイン</button>
+                        <span className="loginForgot">パスワードを忘れた方へ</span>
+                        <button className='loginRegisterButton'>アカウント作成</button>
+                    </div>
                 </div>
-                <div class="button-panel">
-                    <input type="submit" class="button" title="" value="ログイン"></input>
-                </div>
-            </form>
-            <div class="form-footer">
-                <p><a href="#">アカウント作成</a></p>
-                <p><a href="#">パスワードを忘れた方へ</a></p>
             </div>
-        </div>    
+        </div>
     )
 }
