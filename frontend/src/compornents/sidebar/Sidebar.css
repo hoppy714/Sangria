@@ -19,10 +19,11 @@
   margin-bottom: 10px;
   padding: 4px 6px;
   cursor: pointer;
-  box-shadow: 6px 6px 15px -12px #DB7307;
+  box-shadow: 6px 6px 15px -12px #404755;
   border-radius: 10px;
   transition: all 0.3s;
 }
+
 .sidebarListItem:hover {
   box-shadow: none;
   transform: translateY(5px);
