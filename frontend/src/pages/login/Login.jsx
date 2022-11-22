@@ -6,7 +6,7 @@ export default function login() {
         <div className="login">
             <div className="loginWrapper">
                 <div className="loginLeft">
-                    <h3 className="pachiSNS">Panas</h3>
+                    <h3 className="pachiSNS">Panasonic</h3>
                     <span className="loginDesc">Ideas for Life</span>
                 </div>
                 <div className="loginRight">
