@@ -6,14 +6,15 @@ import Topbar from '../../compornents/Topbar/Topbar';
 import "./Profile.css"
 
 export default function Profile() {
+  // const PUBLIC_FOLDER = process.env.REACT_APP_PUBLIC_FOLDER;
   return (
     <>
-        <Topbar />
-        <div className="profile">
-          <Sidebar />
-          <div className="profileRight">
-            <div className="profileRightTop">
-              <div className="profileCover">
+      <Topbar />
+      <div className="profile">
+        <Sidebar />
+        <div className="profileRight">
+          <div className="profileRightTop">
+            <div className="profileCover">
               <img src="assets/post/cover.png" alt="" className='profileCoverImg' />
               <img src="assets/post/post.jpg" alt="" className="profileUserImg" />
             </div>
@@ -21,13 +22,13 @@ export default function Profile() {
               <h4 className="profileInfoName">hoppy</h4>
               <span className="profileInfoDesc">特に趣味はありません</span>
             </div>
-          </div>        
-            <div className="profileRightBottom">
+          </div>
+          <div className="profileRightBottom">
             <Timeline />
-              <Rightbar profile/>
-            </div>
+            <Rightbar profile />
           </div>
         </div>
+      </div>
     </>
   )
 }
