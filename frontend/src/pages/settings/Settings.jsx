@@ -1,7 +1,7 @@
 import React from 'react'
 import Topbar from '../../compornents/Topbar/Topbar';
 import Sidebar from '../../compornents/sidebar/Sidebar';
-// import './settings.css'
+import './Settings.css'
 export default function Settings() {
     return (
         <>
@@ -16,10 +16,10 @@ export default function Settings() {
                             {/*ここから先を折りたたむ*/}
                             <ul className="settingList">
                                 <li className="settingListClick">
-                                    <div className="settingListClickItem">アカウント情報</div>
+                                    <div className="settingListClickItem"> &ensp;&ensp;アカウント情報</div>
                                 </li>
                                 <li className="settingListClick">
-                                    <div className="settingListClickItem">パスワードを変更する</div>
+                                    <div className="settingListClickItem"> &ensp;&ensp;パスワードを変更する</div>
                                 </li>
                             </ul>
                             {/*ここまで先を折りたたむ*/}
@@ -31,10 +31,10 @@ export default function Settings() {
                             {/*ここから先を折りたたむ*/}
                             <ul className="settingList" >
                                 <li className="settingListClick">
-                                    <div className="settingListClickItem">セキュリティ</div>
+                                    <div className="settingListClickItem"> &ensp;&ensp;セキュリティ</div>
                                 </li>
                                 <li className="settingListClick">
-                                    <div className="settingListClickItem">アプリとセッション</div>
+                                    <div className="settingListClickItem"> &ensp;&ensp;アプリとセッション</div>
                                 </li>
                             </ul>
                             {/*ここまで先を折りたたむ*/}
@@ -45,7 +45,7 @@ export default function Settings() {
                             {/*ここから先を折りたたむ*/}
                             <ul className="settingList">
                                 <li className="settingListClick">
-                                    <div className="settingListClickItem">ツイート</div>
+                                    <div className="settingListClickItem"> &ensp;&ensp;ツイート</div>
                                 </li>
                             </ul>
                             {/*ここまで先を折りたたむ*/}
@@ -56,7 +56,7 @@ export default function Settings() {
                             {/*ここから先を折りたたむ*/}
                             <ul className="settingList" >
                                 <li className="settingListClick">
-                                    <div className="settingListClickItem">通知を受け取る</div>
+                                    <div className="settingListClickItem"> &ensp;&ensp;通知を受け取る</div>
                                 </li>
                             </ul>
                             {/*ここまで先を折りたたむ*/}
@@ -67,10 +67,10 @@ export default function Settings() {
                             {/*ここから先を折りたたむ*/}
                             <ul className="settingList" >
                                 <li className="settingListClick">
-                                    <div className="settingListClickItem">アクセシビリティ</div>
+                                    <div className="settingListClickItem"> &ensp;&ensp;アクセシビリティ</div>
                                 </li>
                                 <li className="settingListClick">
-                                    <div className="settingListClickItem">表示</div>
+                                    <div className="settingListClickItem"> &ensp;&ensp;表示</div>
                                 </li>
                             </ul>
                             {/*ここまで先を折りたたむ*/}
