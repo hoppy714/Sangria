@@ -1,5 +1,6 @@
 import React from 'react'
 import './Login.css'
+import { Link } from 'react-router-dom'
 
 export default function login() {
     return (
@@ -15,7 +16,9 @@ export default function login() {
                         <input type="text" className="loginInput" placeholder='Email' />
                         <input type="password" className="loginInput" placeholder='password' />
                         <button className='loginButton'>ログイン</button>
-                        <span className="loginForgot">パスワードを忘れた方へ</span>
+                        <Link to="/register" style={{ textDecoration: "none", color: "#5e5e5e" }}>
+                            <span className="loginForgot">パスワードを忘れた方へ</span>
+                        </Link>
                         <button className='loginRegisterButton'>アカウント作成</button>
                     </div>
                 </div>
