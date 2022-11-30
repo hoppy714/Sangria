@@ -1,6 +1,7 @@
 import React from 'react'
 import Topbar from '../../compornents/Topbar/Topbar';
 import Sidebar from '../../compornents/sidebar/Sidebar';
+import Rightbar from '../../compornents/rightbar/Rightbar';
 import './Settings.css'
 export default function Settings() {
     return (
@@ -9,6 +10,8 @@ export default function Settings() {
             <div className="setting">
                 <Sidebar />
                 <div className="settingWrapper">
+                
+                <h1>設定</h1>
                     <ul className="settingList">
                         <li className="settingListItem"></li>
                         <details>
@@ -76,7 +79,9 @@ export default function Settings() {
                             {/*ここまで先を折りたたむ*/}
                         </details>
                     </ul>
+                    
                 </div>
+                <Rightbar />
             </div>
         </>
     )
