@@ -1,0 +1,115 @@
+.notification {
+  display: flex;
+}
+
+h1 {
+  text-align: left;
+  margin: 10px 15px;
+}
+
+.notificationWrapper {
+  flex: 6;
+}
+
+.notificationNiceWrapper {
+  padding: 10px;
+}
+
+.notificationReplyWrapper {
+  padding: 10px;
+}
+
+.notificationReply {
+  width: 100%;
+  box-shadow: 6px 6px 15px -12px #404755;
+  border-radius: 10px;
+  margin: 30px 0;
+  /*border-bottom: solid 1px;*/ 
+}
+
+.notificationNice {
+  width: 100%;
+  box-shadow: 6px 6px 15px -12px #404755;
+  border-radius: 10px;
+  margin: 30px 0;
+  /*border-bottom: solid 1px;*/ 
+}
+
+.notificationProfileImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.notificationTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notificationTopLeft {
+  display: flex;
+  align-items: flex-start;
+}
+
+.notificationUsername {
+  font-size: 15px;
+  font-weight: 550;
+  margin: 0% 10px;
+}
+
+.notificationDate {
+  font-size: 12px;
+}
+
+.notificationCenter {
+  margin: 15px 0;
+}
+
+.notificationImg {
+  margin-top: 20px;
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.notificationBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.notificationBottomLeft {
+  display: flex;
+  align-items: center;
+}
+
+.likeIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.notificationLikeCounter {
+  font-size: 15px;
+}
+
+.notificationComment {
+  cursor: pointer;
+  border-bottom: 1px solid gray;
+  font-size: 15px;
+  margin-right: 3px;
+}
+.notificationReplyText{
+  margin-left: 50px;
+}
+.notificationText{
+  margin-left: 50px;
+}
+.notificationdetailWrapper{
+  margin:15px 20px;
+  flex:6;
+}
