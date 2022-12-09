@@ -4,7 +4,7 @@ import './Rightbar.css'
 
 
 export default function Rightbar({ profile }) {
-
+  const PUBLIC_FOLDER = process.env.REACT_APP_PUBLIC_FOLDER
   const HomeRightbar = () => {
     return (
       <>
@@ -12,12 +12,12 @@ export default function Rightbar({ profile }) {
           <LocalFireDepartment className='fireImg' htmlColor='red' />
           <span className="eventText"><b>本日イベント日！</b>激熱です！</span>
         </div>
-        <img src="assets/event.jpg" alt="" className='eventImg' />
+        <img src={PUBLIC_FOLDER + "/event.jpg"} alt="" className='eventImg' />
         <h4 className="rightbarTitle">遊戯中の友達</h4>
         <ul className="rightbarFriendList">
           <li className="rightbarFriend">
             <div className="rightbarProfileImgContainer">
-              <img src="./assets/person/4.jpg" alt="" className='friendImg' />
+              <img src={PUBLIC_FOLDER + "person/4.jpg"} alt="" className='friendImg' />
               <span className="rightbarOnline"></span>
             </div>
             <span className="username">Tamai Takayuki</span>
@@ -42,15 +42,15 @@ export default function Rightbar({ profile }) {
           <h4 className="rightbarTitle">あなたの友達</h4>
           <div className="rightbarFollowings">
             <div className="rightbarFollowing">
-              <img src="assets/person/1.png" alt="" className='rightbarFollowingImg' />
+              <img src={PUBLIC_FOLDER + "/person/1.png"} alt="" className='rightbarFollowingImg' />
               <span className="rightbarFollowingName">a</span>
             </div>
             <div className="rightbarFollowing">
-              <img src="assets/person/2.png" alt="" className='rightbarFollowingImg' />
+              <img src={PUBLIC_FOLDER + "/person/2.png"} alt="" className='rightbarFollowingImg' />
               <span className="rightbarFollowingName">i</span>
             </div>
             <div className="rightbarFollowing">
-              <img src="assets/person/3.png" alt="" className='rightbarFollowingImg' />
+              <img src={PUBLIC_FOLDER + "/person/3.png"} alt="" className='rightbarFollowingImg' />
               <span className="rightbarFollowingName">u</span>
             </div>
           </div>

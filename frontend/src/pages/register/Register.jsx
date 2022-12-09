@@ -1,25 +1,25 @@
 import React from 'react'
 import './Register.css'
 
-export default function test() {
+export default function Register() {
     return (
-        <div class="form-wrapper">
-            <h1>アカウント登録</h1>
-            <form>
-                <div class="form-item">
-                    <label for="メールアドレス"></label>
-                    <input type="email" name="email" required="required" placeholder="メールアドレス"></input>
+        <div className="login">
+            <div className="loginWrapper">
+                <div className="loginLeft">
+                    <h3 className="pachiSNS">Panasonic</h3>
+                    <span className="loginDesc">Ideas for Life</span>
                 </div>
-                <div class="form-item">
-                    <label for="password"></label>
-                    <input type="password" name="password" required="required" placeholder="パスワード"></input>
+                <div className="loginRight">
+                    <div className="loginBox">
+                        <p className="loginMsg">新規登録はこちら</p>
+                        <input type="text" className="loginInput" placeholder='ユーザー名' />
+                        <input type="text" className="loginInput" placeholder='Eメールアドレス' />
+                        <input type="password" className="loginInput" placeholder='パスワード' />
+                        <input type="password" className="loginInput" placeholder='確認用パスワード' />
+                        <button className='loginButton'>サインアップ</button>
+                        <button className='loginRegisterButton'>ログイン</button>
+                    </div>
                 </div>
-                <div class="button-panel">
-                    <input type="submit" class="button" title="" value="アカウント作成"></input>
-                </div>
-            </form>
-            <div class="form-footer">
-                <p>ログイン画面</p>
             </div>
         </div>
     )

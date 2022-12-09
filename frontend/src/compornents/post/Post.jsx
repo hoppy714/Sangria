@@ -1,19 +1,31 @@
 import { MoreVert } from '@mui/icons-material'
-import React from 'react'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
 import './Post.css'
-import {Users} from "../../test"
+// import { Users } from "../../test"
 
 
-export default function Post({post}) {
+export default function Post({ post }) {
+  const PUBLIC_FOLDER = process.env.REACT_APP_PUBLIC_FOLDER
+  const [like, setLike] = useState(post.like);
+  const [isliked, setIsLiked] = useState(false);
+  const [user, setUser] = useState({});
 
-  console.log(post);
-  console.log(Users);
+  useEffect(() => {
+    const fetchUser = async () => {
+      const response = axios.get(`/users/${post.userId}`);
+      setUser(response.data)
+    };
+    fetchUser();
+  }, []);
+
+
   return (
     <div className="post">
       <div className="postWrapper">
         <div className="postTop">
           <div className="postTopLeft">
-            <img src="./assets/person/1.png" alt="" className="postProfileImg" />
+            <img src={PUBLIC_FOLDER + "/person/1.png"} alt="" className="postProfileImg" />
             <span className="postUsername">username</span>
             <span className="postDate">{post.date}</span>
           </div>
@@ -27,7 +39,7 @@ export default function Post({post}) {
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
-            <img src="./assets/heart.jpg" alt="" className="likeIcon" />
+            <img src={PUBLIC_FOLDER + "/heart.jpg"} alt="" className="likeIcon" />
             <span className="postLikeCounter">{post.like}</span>
           </div>
           <div className="postBottomRight">
