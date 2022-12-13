@@ -2,7 +2,7 @@ import { MoreVert } from '@mui/icons-material'
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import './Post.css'
-// import { Users } from "../../test"
+import { Users } from "../../test"
 
 
 export default function Post({ post }) {
@@ -14,10 +14,16 @@ export default function Post({ post }) {
   useEffect(() => {
     const fetchUser = async () => {
       const response = axios.get(`/users/${post.userId}`);
+      console.log(response)
       setUser(response.data)
     };
     fetchUser();
   }, []);
+
+  const handleLike = () => {
+    setLike(isliked ? like - 1 : like + 1)
+    setIsLiked(!isliked)
+  }
 
 
   return (
@@ -25,8 +31,8 @@ export default function Post({ post }) {
       <div className="postWrapper">
         <div className="postTop">
           <div className="postTopLeft">
-            <img src={PUBLIC_FOLDER + "/person/1.png"} alt="" className="postProfileImg" />
-            <span className="postUsername">username</span>
+            <img src={Users.filter((user) => user.id === post.id)[0].username} alt="" className="postProfileImg" />
+            <span className="postUsername">{Users.filter((user) => user.id === post.id)[0].username}</span>
             <span className="postDate">{post.date}</span>
           </div>
           <div className="postTopRight">

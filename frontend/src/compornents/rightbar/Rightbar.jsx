@@ -17,7 +17,7 @@ export default function Rightbar({ profile }) {
         <ul className="rightbarFriendList">
           <li className="rightbarFriend">
             <div className="rightbarProfileImgContainer">
-              <img src={PUBLIC_FOLDER + "person/4.jpg"} alt="" className='friendImg' />
+              <img src={PUBLIC_FOLDER + "/person/4.jpg"} alt="" className='friendImg' />
               <span className="rightbarOnline"></span>
             </div>
             <span className="username">Tamai Takayuki</span>
