@@ -7,7 +7,7 @@ import axios from "axios";
 
 
 export default function Timeline() {
-  const [posts, setPosts] = useState([]);
+  const [Posts, setPosts] = useState([]);
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -21,7 +21,7 @@ export default function Timeline() {
     <div className='timeline'>
       <div className="timelineWrapper">
         <Share />
-        {posts.map((post) => (
+        {Posts.map((post) => (
           <Post post={post} key={post.id} />
         ))}
       </div>

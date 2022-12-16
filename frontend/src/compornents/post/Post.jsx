@@ -2,14 +2,13 @@ import { MoreVert } from '@mui/icons-material'
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import './Post.css'
-import { Users } from "../../test"
 
 
 export default function Post({ post }) {
   const PUBLIC_FOLDER = process.env.REACT_APP_PUBLIC_FOLDER
   const [like, setLike] = useState(post.like);
   const [isliked, setIsLiked] = useState(false);
-  const [user, setUser] = useState({});
+  const [Users, setUser] = useState({});
 
   useEffect(() => {
     const fetchUser = async () => {
@@ -45,8 +44,8 @@ export default function Post({ post }) {
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
-            <img src={PUBLIC_FOLDER + "/heart.jpg"} alt="" className="likeIcon" />
-            <span className="postLikeCounter">{post.like}</span>
+            <img src={PUBLIC_FOLDER + "/heart.jpg"} alt="" className="likeIcon" onClick={() => handleLike} />
+            <span className="postLikeCounter">{like}</span>
           </div>
           <div className="postBottomRight">
             <span className="postComment">コメント:{post.comment}</span>

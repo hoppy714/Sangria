@@ -1,6 +1,8 @@
 import { LocalFireDepartment } from '@mui/icons-material'
 import React from 'react'
 import './Rightbar.css'
+import Online from '../online/Online'
+import { Users } from '../../test'
 
 
 export default function Rightbar({ profile }) {
@@ -15,13 +17,9 @@ export default function Rightbar({ profile }) {
         <img src={PUBLIC_FOLDER + "/event.jpg"} alt="" className='eventImg' />
         <h4 className="rightbarTitle">遊戯中の友達</h4>
         <ul className="rightbarFriendList">
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img src={PUBLIC_FOLDER + "/person/4.jpg"} alt="" className='friendImg' />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="username">Tamai Takayuki</span>
-          </li>
+          {Users.map((user) => (
+            <Online user={user} key={user.id} />
+          ))}
         </ul>
         <p className="promotionTitle">広告</p>
         <img src="" alt="" className="promotionImg" />
