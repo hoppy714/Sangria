@@ -18,7 +18,6 @@ router.put("/:id", async (req, res) => {
         return res
             .status(403)
             .json("自分のアカウントの時だけ情報を更新できます");
-
     }
 });
 
