@@ -3,11 +3,12 @@ import React from 'react'
 import './Share.css'
 
 export default function Share() {
+  const PUBLIC_FOLDER = process.env.REACT_APP_PUBLIC_FOLDER;
   return (
     <div className="share">
       <div className="shareWrapper">
         <div className="shareTop">
-          <img src="/assets/person/1.png" alt="" className="shareTopProfile" />
+          <img src={PUBLIC_FOLDER + "/person/prof.png"} alt="" className="shareTopProfile" />
           <input type="text" className="shareInput" placeholder='' />
         </div>
         <hr className="shareHr" />

@@ -2,6 +2,8 @@ import React from 'react';
 import { Description, Home, MessageRounded, Notifications, Person, Search, Settings } from "@mui/icons-material";
 import "./Sidebar.css"
 import { Link } from 'react-router-dom';
+import { Users } from '../../test'
+import CloseFriend from '../closefriend/CloseFriend';
 
 export default function Sidebar() {
   return (
@@ -28,7 +30,9 @@ export default function Sidebar() {
           </li>
           <li className="sidebarListItem">
             <Description className="sidebarIcon" />
-            <span className="sidebarListItemText">収支表</span>
+            <Link to="/shushi/hoppy" style={{ color: "#5e5e5e", textDecoration: "none" }}>
+              <span className="sidebarListItemText">収支表</span>
+            </Link>
           </li>
           <li className="sidebarListItem">
             <Person className="sidebarIcon" />
@@ -45,18 +49,10 @@ export default function Sidebar() {
         </ul>
         <hr className="sidebarHr" />
         <ul className="sidebarFriendList">
-          <li className="sidebarFriend">
-            <img src="/assets/person/2.jpg" alt="" className='sidebarFriendImg' />
-            <span className="sidebarFriendName">Ginjiro Abe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/3.jpg" alt="" className='sidebarFriendImg' />
-            <span className="sidebarFriendName">Ken Hatakenaka</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/4.jpg" alt="" className='sidebarFriendImg' />
-            <span className="sidebarFriendName">Takayuki Tamai</span>
-          </li>
+          {Users.map((user) => (
+            <CloseFriend user={user} key={user.id} />
+          ))}
+
         </ul>
       </div>
     </div >

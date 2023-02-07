@@ -1,25 +1,35 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Register.css'
+import { loginCall } from '../../actionCalls';
+import { useNavigate } from 'react-router-dom';
 
-export default function test() {
+export default function Register() {
+    const username = useRef();
+    const email = useRef();
+    const password = useRef();
+    const passwordConf = useRef();
+    const navigate = useNavigate();
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    };
     return (
-        <div class="form-wrapper">
-            <h1>アカウント登録</h1>
-            <form>
-                <div class="form-item">
-                    <label for="メールアドレス"></label>
-                    <input type="email" name="email" required="required" placeholder="メールアドレス"></input>
+        <div className="register">
+            <div className="registerWrapper">
+                <div className="registerLeft">
+                    <h3 className="pachiSNS">Panasonic</h3>
+                    <span className="registerDesc">Ideas for Life</span>
                 </div>
-                <div class="form-item">
-                    <label for="password"></label>
-                    <input type="password" name="password" required="required" placeholder="パスワード"></input>
+                <div className="registerRight">
+                    <form className="registerBox" onSubmit={(e) => handleSubmit(e)}>
+                        <p className="registerMsg">新規登録はこちら</p>
+                        <input type="text" className="registerInput" placeholder='ユーザー名' required ref={username} />
+                        <input type="email" className="registerInput" placeholder='メールアドレス' required ref={email} />
+                        <input type="password" className="registerInput" placeholder='パスワード' required minLength="5" ref={password} />
+                        <input type="password" className="registerInput" placeholder='確認用パスワード' required minLength="5" ref={passwordConf} />
+                        <button className='registerButton' type='submit'>サインアップ</button>
+                        <button className='registerRegisterButton' type='submit'>ログイン</button>
+                    </form>
                 </div>
-                <div class="button-panel">
-                    <input type="submit" class="button" title="" value="アカウント作成"></input>
-                </div>
-            </form>
-            <div class="form-footer">
-                <p>ログイン画面</p>
             </div>
         </div>
     )

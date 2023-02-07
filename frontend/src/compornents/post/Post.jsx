@@ -1,21 +1,38 @@
 import { MoreVert } from '@mui/icons-material'
-import React from 'react'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
 import './Post.css'
-import {Users} from "../../test"
+import { format } from "timeago.js"
+import { Link } from 'react-router-dom';
+// import { Users } from "../../test"
 
 
-export default function Post({post}) {
-
-  console.log(post);
-  console.log(Users);
+export default function Post({ post }) {
+  const PUBLIC_FOLDER = process.env.REACT_APP_PUBLIC_FOLDER;
+  const [like, setLike] = useState(post.likes.length);
+  const [isLiked, setIsLiked] = useState(false);
+  const [user, setUser] = useState({});
+  useEffect(() => {
+    const fetchUser = async () => {
+      const response = await axios.get(`/users?userId=${post.userId}`)
+      // console.log(response);
+      setUser(response.data)
+    };
+    fetchUser();
+  }, [post.userId]);
+  const handleLike = () => {
+    setLike(isLiked ? like - 1 : like + 1);
+    setIsLiked(!isLiked);
+  }
   return (
     <div className="post">
       <div className="postWrapper">
         <div className="postTop">
           <div className="postTopLeft">
-            <img src="./assets/person/1.png" alt="" className="postProfileImg" />
-            <span className="postUsername">username</span>
-            <span className="postDate">{post.date}</span>
+            <Link to={`/profile/${user.username}`}>
+              <img src={user.profilePicture || PUBLIC_FOLDER + "/person/prof.png"} alt="" className="postProfileImg" /></Link >
+            <span className="postUsername">{user.username}</span>
+            <span className="postDate">{format(post.createdAt)}</span>
           </div>
           <div className="postTopRight">
             <MoreVert />
@@ -23,12 +40,12 @@ export default function Post({post}) {
         </div>
         <div className="postCenter">
           <span className="postText">{post.desc}</span>
-          <img src={post.img} alt="" className="postImg" />
+          <img src={PUBLIC_FOLDER + post.img} alt="" className="postImg" />
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
-            <img src="./assets/heart.jpg" alt="" className="likeIcon" />
-            <span className="postLikeCounter">{post.like}</span>
+            <img src={PUBLIC_FOLDER + "/heart.jpg"} alt="" className="likeIcon" onClick={() => handleLike()} />
+            <span className="postLikeCounter">{like}</span>
           </div>
           <div className="postBottomRight">
             <span className="postComment">コメント:{post.comment}</span>

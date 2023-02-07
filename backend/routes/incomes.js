@@ -31,8 +31,8 @@ router.get("/month", async (req, res) => {
         const currentUser = await User.findById(req.body.userId);
         const userTotal = await Income.find({ userId: currentUser._id });
         // const checkMonth = userTotal.getFullYear() + userTotal.getMonth() + 1;
-        const result = userTotal.filter(function (checkMonth) {
-            return checkMonth.include();
+        const result = userTotal.filter(function (checkMonth, index) {
+            return ((checkMonth.createdAt).indexOf(req.day) >= 0);
         });
         return res.status(200).json(result)
     } catch (err) {

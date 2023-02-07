@@ -88,11 +88,20 @@ router.put("/:id/like", async (req, res) => {
         return res.status(500).json(err);
     }
 });
-
-//フォロワーのタイムラインを表示する。
-router.get("/timeline/all", async (req, res) => {
+//プロフィール用タイムライン
+router.get("/profile/:username", async (req, res) => {
     try {
-        const currentUser = await User.findById(req.body.userId);
+        const user = await User.findOne({ username: req.params.username });
+        const posts = await Post.find({ userId: user._id });
+        return res.status(200).json(posts);
+    } catch (err) {
+        return res.status(500).json(err);
+    }
+});
+//フォロワーのタイムラインを表示する。
+router.get("/timeline/:userId", async (req, res) => {
+    try {
+        const currentUser = await User.findById(req.params.userId);
         const userPosts = await Post.find({ userId: currentUser._id });
         //フォロー中のユーザーのタイムライン表示。
         const friendPosts = await Promise.all(currentUser.followings.map((friendId) => {
